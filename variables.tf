@@ -4,4 +4,4 @@ variable "environment" {}
 
 variable "argocd_project" {}
 
-#variable "helm_version" {}
+variable "helm_version" {}
