@@ -17,10 +17,10 @@ resource "argocd_application" "loki" {
     source {
       repo_url        = "https://grafana.github.io/helm-charts"
       chart           = "loki-stack"
-      target_revision = "2.8.7" #var.helm_version.loki
+      target_revision = var.helm_version.loki-stack
       helm {
         value_files  = ["values.yaml"]
-        release_name = var.environment
+
       }
 
     }
