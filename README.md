@@ -5,7 +5,7 @@ How to use it:
 
 ```
 module "loki_stack" {
-  source          = "git@github.com:taulanthalili/tf-loki-stack.git?ref=main"
+  source          = "git::https://github.com/taulanthalili/tf-loki-stack.git?ref=main"
   namespace       = var.project_name
   environment     = var.environment
   argocd_project  = "default"
